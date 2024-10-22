@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn Màu Sản Phẩm</title>
+    <style>
+        .color-option {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 1px solid #000;
+        }
+        .color-display {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            display: inline-block;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Chọn màu cho sản phẩm:</h2>
+    <div id="color-options">
+        <div class="color-option" style="background-color: rgb(0, 0, 0);" data-color="#SK010"></div>
+        <div class="color-option" style="background-color: rgb(255, 255, 255);" data-color="#SA430"></div>
+        <div class="color-option" style="background-color: rgb(76, 76, 238);" data-color="#SB001"></div>
+    </div>
+    <!-- <label for="color-picker">Hoặc chọn màu khác:</label>
+    <input type="color" id="color-picker" value="#ff0000"> -->
+    <div class="color-display" id="color-display"></div>
+    <span id="color-code"></span>
+
+    <script>
+        const colorOptions = document.querySelectorAll('.color-option');
+        const colorPicker = document.getElementById('color-picker');
+        const colorDisplay = document.getElementById('color-display');
+        const colorCode = document.getElementById('color-code');
+
+        // Cập nhật màu và mã màu khi nhấp vào lựa chọn màu
+        colorOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const selectedColor = option.getAttribute('data-color');
+                colorDisplay.style.backgroundColor = selectedColor;
+                colorCode.textContent = selectedColor;
+                colorPicker.value = selectedColor; // Cập nhật giá trị của input color
+            });
+        });
+
+        // Cập nhật màu và mã màu khi chọn từ input color
+        colorPicker.addEventListener('input', (event) => {
+            const selectedColor = event.target.value;
+            colorDisplay.style.backgroundColor = selectedColor;
+            colorCode.textContent = selectedColor;
+        });
+
+        // Cập nhật ban đầu
+        colorDisplay.style.backgroundColor = colorPicker.value;
+        colorCode.textContent = colorPicker.value;
+    </script>
+</body>
+</html>

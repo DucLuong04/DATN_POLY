@@ -1,0 +1,19 @@
+<div>
+    <label for="" class="mt-2">Họ và tên</label><br>
+    <input type="text" class="form-control" ng-model="updateND.hoten"><br>
+    <label for="" class="mt-3">Tuổi</label><br>
+    <input type="text" class="form-control" ng-model="updateND.tuoi"><br>
+    <label for="" class="mt-2">Địa chỉ</label>
+    <select ng-model="updateND.diachi" class="form-control">
+        <option value="" hidden>--Chọn thành phố--</option>
+        <option ng-repeat="el in listThanhPho" value="{{el.thanhpho}}">{{el.thanhpho}}</option>
+    </select><br>
+    <label for="" class="mt-2">Số điện thoại</label>
+    <input type="text" class="form-control" ng-model="updateND.sodienthoai"><br>
+    <label for="" class="mt-2">Vai trò</label>
+    <select ng-model="updateND.vaitro" class="form-control">
+        <option value="" hidden>--Chọn vai trò--</option>
+        <option ng-repeat="el in listVaiTro" value="{{el.vaitro}}">{{el.vaitro}}</option>
+    </select>
+    <button class="btn btn-succes bg-warning mt-3" ng-click="update()">Sửa</button>
+</div>

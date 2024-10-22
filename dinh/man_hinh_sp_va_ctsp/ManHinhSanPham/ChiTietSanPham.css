@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box ;
+}
+
+body{
+    margin: auto ;
+    padding: auto ;
+}
+
+.carousel-inner{
+    text-align: center ;
+    justify-content: center ;
+}
+
+.information{
+    position: relative ;
+}
+
+.text-product{
+    font-size: 50px ;
+    font-weight: lighter ;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.point{
+    font-size: 30px ;
+    font-weight: bold ;
+}
+
+.love{
+    position: absolute ;
+    font-size: 30px ;
+    top: 18px ;
+    right: 97px ;
+}
+
+.text-sale{
+    background-color: #ff0000 ;
+    height: 120px ;
+}
+
+.text-sale1{
+    text-align: center ;
+    justify-content: center ;
+    font-weight: bold ;
+    color: #fff ;
+    font-size: 40px ;
+    text-transform: uppercase ;
+    margin-top: 2px ;
+}
+
+.text-sale2{
+    text-align: center ;
+    justify-content: center ;
+}
+
+.text-sale2 p{
+    margin-top: 25px ;
+    text-transform: uppercase ;
+    color: #fff ;
+}
+
+.percent-sale{
+    font-size: 50px ;
+    display: inline ;
+}
+
+.vertical-line {
+    width: 2px ; /* Độ dày của đường kẻ */
+    height: 105px ; /* Chiều cao của đường kẻ */
+    background-color: rgb(255, 255, 255) ; /* Màu sắc của đường kẻ */
+    margin: 10px ; /* Khoảng cách xung quanh */
+}
+
+.img-content img {
+    width: 450px;
+    height: 579px;
+}
+
+.card-title{
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-text{
+    font-weight: bold;
+}
+.sale{
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 100;
+}
+.percent-sale1{
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+}
+.label-text{
+    font-weight: 400;
+    font-size: 10px;
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.shopping-cart{
+    margin-bottom: 1px;
+}
+.card-body{
+    text-align: left;
+    justify-content: left;
+}
+
+.dropdown{
+    position: absolute;
+    top: 7%;
+    left: 4%;
+}

@@ -1,0 +1,33 @@
+<h3 class="text-dark">Quản lý sản phẩm</h3>
+<a href="#!addsanpham">
+    <button type="button" class="btn btn-success mt-3">Thêm mới</button>
+</a>
+<div>
+    <table class="table table-bordered mt-3" style="text-align: center;">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Giá sản phẩm</th>
+                <th>Mô tả</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat=" (index, value) in listsanpham">
+                <td> {{ index + 1 }} </td>
+                <td><img src="{{ value.hinh }}" alt="" style="width: 50px;"></td>
+                <td> {{ value.ten }} </td>
+                <td> {{ value.soluong }} </td>
+                <td> {{ value.gia }} </td>
+                <td> {{ value.mota }} </td>
+                <td>
+                    <a href="#!updatesanpham/{{ value.id }}" class="btn btn-warning">Sửa</a>
+                    <button type="button" class="btn btn-danger" ng-click="delete(value.id)">Xóa</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

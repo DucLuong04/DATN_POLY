@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../ManHinhSanPham/HienThi.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="row bg-danger">
+        <div class="col-1">
+            <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Áo</a></li>
+                <li><a class="dropdown-item" href="#">Quần</a></li>
+                <li><a class="dropdown-item" href="#">Full bộ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-3 d-flex justify-content-start">
+            <div class="d-flex flex-wrap">
+                <div class="p-4 bd-highlight d-flex justify-content-start">
+                    <nav class="nnavbar navbar-expand-lg navbar-dark bg-danger">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
+                            <li class="nav-brand">
+                                <a class="img-header nav-link" aria-current="page" href="#">
+                                <h1 class="link-light">REGAL STORE</h1>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- giữa -->
+        <div class="col-4 d-flex justify-content-center">
+            <div class="content bd-highlight mt-5">
+                <form class="d-flex flex-row bd-highlight mb-3">
+                    <input class="form-control bd-highligh me-2 mt-2" type="search" placeholder="Search" aria-label="Search"
+                        style="height: auto; width: 600px;">
+                    <button class="btn btn-search mt-2" type="submit" style="height: 37px;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- cuối -->
+        <div class="col-3">
+            <div class="nav-i cart d-flex flex-wrap mt-4 d-flex justify-content-end">
+                <nav class="nnavbar navbar-expand-lg navbar-dark">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3 me-auto">
+                        <li class="nav-brand nav-img">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <div class="img"><i class="fa-solid fa-phone mt-2" style="width: 100%; height: 30px;"></i></div>
+                                <div class="p">
+                                    <p>1800.2079</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-brand nav-img-2">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <div class="img"><i class="fa-solid fa-location-dot  mt-2"
+                                        style="width: 100%; height: 30px;"></i></div>
+                                <div class="p">
+                                    <p>Cửa hàng</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-brand nav-img-3">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <div class="img"><i class="fa-solid fa-cart-shopping mt-2" style="width: 100%; height: 30px;">
+                                    </i>
+                                </div>
+                                <div class="p">
+                                    <p>Giỏ hàng</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-brand nav-img-4 mt-2">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <div class="img"><i class="fa-solid fa-user"
+                                        style="width: 100%; height: 30px; text-align: center;">
+                                    </i>
+                                </div>
+                                <div class="p">
+                                    <p>Đăng nhập</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <img src="../img/hien_thi_san_pham/navigation/nav.png" alt="">
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 mt-4">
+            <div class="row">
+                <h3>Siêu hội sale - đón gió mùa</h3>
+                <div class="col-4">
+                    <div class="img-content col-4">
+                        <img src="../img/hien_thi_san_pham/content/1.png" alt="" width="450px" height="650px">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="card" style="width: 18.6rem;">
+                                            <img src="../img/hien_thi_san_pham/sidebar/1.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Quần soóc nam</h5>
+                                                <p> <span class="card-text">356.850 ₫ </span> <br> 
+                                                    <span class="sale">549.000 ₫</span>
+                                                    <span class="percent-sale">-35%</span> <br>
+                                                    <span class="label-text">
+                                                        Giá độc quyền Online
+                                                    </span>
+                                                </p>
+                                                <a href="#" class="btn btn-danger form-control shopping-cart">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div> &emsp;&emsp;&emsp;&emsp;&emsp;
+
+                                    <div class="col-3">
+                                        <div class="card" style="width: 18.6rem;">
+                                            <img src="../img/hien_thi_san_pham/sidebar/4.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Áo phông nam in hình Mickey</h5>
+                                                <p> <span class="card-text">247.380 ₫ </span> <br> 
+                                                    <span class="sale">399.000 ₫</span>
+                                                    <span class="percent-sale">-38%</span> <br>
+                                                    <span class="label-text">
+                                                        Giá độc quyền Online
+                                                    </span>
+                                                </p>
+                                            <a href="#" class="btn btn-danger form-control">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+                                    <div class="col-3">
+                                        <div class="card" style="width: 18.6rem;">
+                                            <img src="../img/hien_thi_san_pham/sidebar/3.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Áo polo active nam</h5>
+                                                <p> <span class="card-text">339.320 ₫ </span> <br> 
+                                                    <span class="sale">499.000 ₫</span>
+                                                    <span class="percent-sale">-32%</span> <br>
+                                                    <span class="label-text">
+                                                        Giá độc quyền Online
+                                                    </span>
+                                                </p>
+                                                <a href="#" class="btn btn-danger form-control">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="card" style="width: 18.6rem;">
+                                            <img src="../img/hien_thi_san_pham/sidebar/2.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Áo khoác nỉ unisex người</h5>
+                                                <p> <span class="card-text">649.350 ₫ </span> <br> 
+                                                    <span class="sale">999.000 ₫</span>
+                                                    <span class="percent-sale">-35%</span> <br>
+                                                    <span class="label-text">
+                                                        Giá độc quyền Online
+                                                    </span>
+                                                </p>
+                                                <a href="#" class="btn btn-danger form-control">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div> &emsp;&emsp;&emsp;&emsp;&emsp;
+
+                                    <div class="col-3">
+                                        <div class="card" style="width: 18.6rem;">
+                                            <img src="../img/hien_thi_san_pham/sidebar/5.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Áo phông nam in hình Mickey</h5>
+                                                <p> <span class="card-text">247.380 ₫ </span> <br> 
+                                                    <span class="sale">399.000 ₫</span>
+                                                    <span class="percent-sale">-38%</span> <br>
+                                                    <span class="label-text">
+                                                        Giá độc quyền Online
+                                                    </span>
+                                                </p>
+                                            <a href="#" class="btn btn-danger form-control">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+                                    <div class="col-3">
+                                        <div class="card" style="width: 18.6rem;">
+                                            <img src="../img/hien_thi_san_pham/sidebar/6.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Áo phông nam in hình Mickey</h5>
+                                                <p> <span class="card-text">247.380 ₫ </span> <br> 
+                                                    <span class="sale">399.000 ₫</span>
+                                                    <span class="percent-sale">-38%</span> <br>
+                                                    <span class="label-text">
+                                                        Giá độc quyền Online
+                                                    </span>
+                                                </p>
+                                                <a href="#" class="btn btn-danger form-control">Thêm vào giỏ hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- khách -->
+
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 mt-4">
+            <div class="row">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="card" style="width: 18.6rem;">
+                                        <a href="http://127.0.0.1:5500/ManHinhSanPham/ChiTietSanPham.html">
+                                            <img src="../img/ao_3_lo/san_pham_ao_len_den_hien_thi.png" class="card-img-top" alt="...">
+                                        </a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Áo len gilet nam</h5>
+                                            <p> <span class="card-text">499.000 ₫ </span></p>
+                                            <a href="#" class="btn btn-danger form-control">Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="card" style="width: 18.6rem;">
+                                        <img src="../img/hien_thi_san_pham/sidebar/4.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Áo phông nam in hình Mickey</h5>
+                                            <p> <span class="card-text">247.380 ₫ </span></p>
+                                        <a href="#" class="btn btn-danger form-control">Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="card" style="width: 18.6rem;">
+                                        <img src="../img/hien_thi_san_pham/sidebar/3.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Áo polo active nam</h5>
+                                            <p> <span class="card-text">339.320 ₫ </span> </p>
+                                            <a href="#" class="btn btn-danger form-control">Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="card" style="width: 18.6rem;">
+                                        <img src="../img/hien_thi_san_pham/sidebar/1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Áo nỉ nam có in hình</h5>
+                                            <p> <span class="card-text">3234.350 ₫ </span></p>
+                                            <a href="#" class="btn btn-danger form-control shopping-cart">Thêm vào giỏ hàng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- footer -->
+    <div class="row mt-3 bg-light">
+        <div class="col-1"></div>
+        <div class="col-10 d-grid gap-2 d-flex flex-row bd-highlight mb-3">
+            <div class="col-4 mt-2">
+                <h3>Tổng đài hỗ trợ miễn phí</h3>
+                <div>
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <p>Gọi mua hàng
+                                <a class="navbar-brand" href="#">1800.2097</a>(07h30-22h00)
+                            </p>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <p>Gọi khuyến mại
+                                <a class="navbar-brand" href="#">1800.2063</a>(07h30-22h00)
+                            </p>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <p>Gọi Bảo hành
+                                <a class="navbar-brand" href="#">1800.2064</a>(08h00-21h00)
+                            </p>
+                        </div>
+                    </nav>
+                </div>
+                <h3>Phương thức thanh toán</h3>
+                <div class="d-flex flex-row bd-highlight mb-3">
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <a href="#"><img src="./img/Screenshot 2024-01-21 232747.png" style="width: 50px; height: 25px;"
+                                    alt=""></a> &ensp;
+                            <a href="#"><img src="./img/Screenshot 2024-01-21 233229.png" style="width: 50px; height: 25px;"
+                                    alt=""></a> &ensp;
+                            <a href="#"><img src="./img/Screenshot 2024-01-21 233542.png" style="width: 50px; height: 25px;"
+                                    alt=""></a> &ensp;
+                            <a href="#"><img src="./img/Screenshot 2024-01-21 233734.png" style="width: 50px; height: 25px;"
+                                    alt=""></a> &ensp;
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-4 mt-2">
+                <h3>Mua hàng va thanh toán online</h3>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Mua hàng trả góp online</a>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Mua hàng trả góp bằng thẻ tín dụng</a>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Chính sách giao hàng</a>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Thông tin bảo hàng</a>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Tra cứu hóa đơn điện tử</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-4 mt-2">
+                <h3>Dịch vụ và thông tin khác</h3>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Khách hàng doanh nghiệp (B2B)</a>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Ưu đãi thanh toán</a>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Quy chế hoạt động</a>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Chính sách bảo hàng</a>
+                    </div>
+                </nav>
+                <nav class="navbar navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Liên hệ hợp tác kinh doanh</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+        <div class="col-1"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</body>
+</html>

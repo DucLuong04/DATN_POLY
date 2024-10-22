@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.img-content img {
+    width: 450px;
+    height: 579px;
+}
+
+.card-title{
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-text{
+    font-weight: bold;
+}
+.sale{
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 100;
+}
+.percent-sale{
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+}
+.label-text{
+    font-weight: 400;
+    font-size: 10px;
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.shopping-cart{
+    margin-bottom: 1px;
+}
+
+.carousel-control-prev{
+    position: absolute;
+    top: 50%;
+    color: rgb(186, 186, 186);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.carousel-control-next{
+    position: absolute;
+    top: 50%;
+    color: rgb(186, 186, 186);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.dropdown{
+    position: absolute;
+    top: 7%;
+    left: 4%;
+}

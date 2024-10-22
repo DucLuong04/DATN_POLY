@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn Kích Thước Sản Phẩm</title>
+    <style>
+        .size-option {
+            padding: 10px;
+            border: 1px solid #000;
+            margin-right: 10px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .size-display {
+            padding: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Chọn kích thước cho sản phẩm:</h2>
+    <div id="size-options">
+        <div class="size-option" data-size="S">S</div>
+        <div class="size-option" data-size="M">M</div>
+        <div class="size-option" data-size="L">L</div>
+        <div class="size-option" data-size="XL">XL</div>
+    </div>
+    <div class="size-display" id="size-display">Kích thước: S</div>
+
+    <script>
+        const sizeOptions = document.querySelectorAll('.size-option');
+        const sizeDisplay = document.getElementById('size-display');
+
+        // Cập nhật kích thước khi nhấp vào lựa chọn kích thước
+        sizeOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const selectedSize = option.getAttribute('data-size');
+                sizeDisplay.textContent = `Kích thước: ${selectedSize}`;
+            });
+        });
+
+        // Cập nhật kích thước ban đầu
+        sizeDisplay.textContent = `Kích thước: ${sizeOptions[0].getAttribute('data-size')}`;
+    </script>
+    <div class="container mt-5">
+        <h1>Tiêu đề sản phẩm</h1>
+        <div class="toggle-button text-primary">
+            <span id="toggle-icon">+</span> Xem mô tả
+        </div>
+        <p class="description" id="product-description">
+            Đây là phần mô tả chi tiết cho sản phẩm. Nó sẽ hiển thị thêm thông tin hữu ích cho người dùng về sản phẩm này.
+        </p>
+    </div>
+
+    <script>
+        const toggleButton = document.querySelector('.toggle-button');
+        const description = document.getElementById('product-description');
+        const toggleIcon = document.getElementById('toggle-icon');
+
+        toggleButton.addEventListener('click', () => {
+            if (description.style.display === 'none') {
+                description.style.display = 'block'; // Hiển thị mô tả
+                toggleIcon.textContent = '-'; // Đổi thành dấu trừ
+            } else {
+                description.style.display = 'none'; // Ẩn mô tả
+                toggleIcon.textContent = '+'; // Đổi thành dấu cộng
+            }
+        });
+    </script>\
+    <button data-v-a8b9078a="" type="submit" title="" class="action action-wishlist action towishlist action towishlist"><span class="screen-reader-text">Thêm vào yêu thích</span></button>
+</body>
+</html>
