@@ -7,50 +7,50 @@
 	<div class="col-md-8">
 		<form class="form p-3">
 			<div class="form-group row">
-				<label class="form-label">Name</label>
-				<input type="text" class="form-control" ng-model="form.name" placeholder="Enter name">
+				<label class="form-label">Tên Sản Phẩm</label>
+				<input type="text" class="form-control" ng-model="form.name" placeholder="Nhập Tên Sản Phẩm">
 			</div>
 			<div class="form-group row">
-				<label class="form-label">Price</label>
+				<label class="form-label">Giá</label>
 				<div class="input-group">
 					<div class="input-group-prepend">
 						<span class="input-group-text">VND</span>
 					</div>
-					<input type="number" class="form-control" ng-model="form.price" placeholder="Enter price">
+					<input type="number" class="form-control" ng-model="form.price" placeholder="Nhập giá">
 				</div>
 			</div>
 			<div class="form-group row">
-				<label class="form-label">Image</label>
+				<label class="form-label">Ảnh</label>
 				<div class="custom-file">
-					<input type="file" class="custom-file-input" id="image">
-					<label class="custom-file-label">Choose file</label>
+					<input type="file" class="custom-file-input" id="Tải ảnh lên">
+					<label class="custom-file-label">Chọn file</label>
 				</div>
 			</div>
 			<div class="form-group row">
-				<label class="form-label">Category</label>
+				<label class="form-label">Danh mục</label>
 				<select ng-model="form.category.id" class="custom-select">
 					<option ng-repeat="c in cates" ng-value="c.id"></option>
 				</select>
 			</div>
 			<div class="form-group row">
-				<label class="form-label">Create Date</label>
+				<label class="form-label">Ngày Tạo</label>
 				<input type="date" class="form-control" ng-model="form.createDate" placeholder="2024-01-01">
 			</div>
 			<div class="form-group row">
-				<label class="col-md-2 px-0 control-label">Available</label>
+				<label class="col-md-2 px-0 control-label">Trạng Thái</label>
 				<div class="col-md-10">
 					<div class="form-check-inline pr-3">
 						<div class="custom-control custom-radio">
 							<input type="radio" class="custom-control-input" id="yes" name="available"
 								ng-model="form.available" ng-value="true">
-							<label class="custom-control-label" for="yes">Yes</label>
+							<label class="custom-control-label" for="yes">Còn hàng</label>
 						</div>
 					</div>
 					<div class="form-check-inline">
 						<div class="custom-control custom-radio">
 							<input type="radio" class="custom-control-input" id="no" name="available"
 								ng-model="form.available" ng-value="false">
-							<label class="custom-control-label" for="no">No</label>
+							<label class="custom-control-label" for="no">Hết hàng</label>
 						</div>
 					</div>
 				</div>
