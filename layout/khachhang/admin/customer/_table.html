@@ -4,14 +4,24 @@
 			<thead>
 				<tr>
 					<th>Id</th>
-					<th>Tên Danh Mục</th>
-					<th>#</th>
+					<th>Tên khách hàng</th>
+					<th>Email</th>
+					<th>SĐT</th>
+					<th>SĐT thay thế</th>
+					<th>Địa chỉ </th>
+					<th>Địa chỉ thay thế</th>
+					<th>Tùy Chỉnh</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="item in items">
+				<tr>
 					<td class="align-center">1</td>
-					<td class="align-center">Áo sơ mi</td>
+					<td class="align-center w-25">Nguyễn Đức Lương</td>
+					<td class="align-center">luong123@gmail.com</td>
+					<td class="align-center">0345783896</td>
+					<td class="align-center">0348726529</td>
+					<td class="align-center">Bắc Từ Liêm, Hà Nội</td>
+					<td class="align-center">Thanh Xuân, Hà Nội</td>
 					<td class="align-center">
 						<div class="btn-group btn-group-xs">
 							<button ng-click="edit(item)" class="btn btn-icon">
@@ -21,11 +31,17 @@
 								<i class="fa fa-xs fa-times"></i>
 							</button>
 						</div>
+						
 					</td>
 				</tr>
 				<tr>
 					<td class="align-center">2</td>
-					<td class="align-center">Quần jean</td>
+					<td class="align-center w-25">Bùi Đức Việt</td>
+					<td class="align-center">viet123@gmail.com</td>
+					<td class="align-center">0967265925</td>
+					<td class="align-center"></td>
+					<td class="align-center">Nam Từ Liêm, Hà Nội</td>
+					<td class="align-center"></td>
 					<td class="align-center">
 						<div class="btn-group btn-group-xs">
 							<button ng-click="edit(item)" class="btn btn-icon">
@@ -39,7 +55,12 @@
 				</tr>
 				<tr>
 					<td class="align-center">3</td>
-					<td class="align-center">Áo thun</td>
+					<td class="align-center w-25">Trần Huyền Trang</td>
+					<td class="align-center">trang123@gmail.com</td>
+					<td class="align-center">0894639565</td>
+					<td class="align-center">0967265925</td>
+					<td class="align-center">Bắc Từ Liêm, Hà Nội</td>
+					<td class="align-center"></td>
 					<td class="align-center">
 						<div class="btn-group btn-group-xs">
 							<button ng-click="edit(item)" class="btn btn-icon">
@@ -49,11 +70,17 @@
 								<i class="fa fa-xs fa-times"></i>
 							</button>
 						</div>
+						
 					</td>
 				</tr>
 				<tr>
-					<td class="align-center">4</td>
-					<td class="align-center">Quần tây</td>
+					<td class="align-center">3</td>
+					<td class="align-center w-25">Lỗ Quyết Định</td>
+					<td class="align-center">dinh123@gmail.com</td>
+					<td class="align-center">0896464620</td>
+					<td class="align-center"></td>
+					<td class="align-center">Nam Từ Liêm, Hà Nội</td>
+					<td class="align-center">Bắc Từ Liêm, Hà Nội</td>
 					<td class="align-center">
 						<div class="btn-group btn-group-xs">
 							<button ng-click="edit(item)" class="btn btn-icon">
@@ -63,25 +90,12 @@
 								<i class="fa fa-xs fa-times"></i>
 							</button>
 						</div>
+						
 					</td>
 				</tr>
-				<tr>
-					<td class="align-center">5</td>
-					<td class="align-center">Áo khoác</td>
-					<td class="align-center">
-						<div class="btn-group btn-group-xs">
-							<button ng-click="edit(item)" class="btn btn-icon">
-								<i class="fa fa-xs fa-pen"></i>
-							</button>
-							<button ng-click="delete(item)" class="btn btn-danger">
-								<i class="fa fa-xs fa-times"></i>
-							</button>
-						</div>
-					</td>
-				</tr>
-
 			</tbody>
 		</table>
 	</div>
 </div>
+
 <script src="/assetss/js/init.js"></script>
