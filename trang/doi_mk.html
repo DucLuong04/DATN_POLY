@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regal Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .header {
+            background-color: #FF0000;
+            padding: 15px;
+            color: white;
+        }
+        .header .brand {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .header .search-bar {
+            width: 300px;
+            display: block;
+            margin-left: 20px;
+        }
+        .header .menu-right {
+            font-size: 14px;
+            float: right;
+        }
+        .header .menu-right div {
+            display: block;
+            text-align: center;
+            margin-left: 20px;
+        }
+        .breadcrumb {
+            color: #74869b;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 10px;
+        }
+
+        .menu {
+            width: 200px;
+            background-color: white;
+            padding: 15px;
+            border-right: 1px solid #ddd;
+        }
+
+        .nav-link {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-link.active, .nav-link:hover {
+            background-color: #f5f5f5;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        .nav-link i {
+            margin-right: 10px;
+        }
+
+        .content {
+            padding: 15px;
+            background-color: white;
+            margin-left: 30px;
+            border-radius: 10px;
+        }
+
+       
+        .form-label-group {
+            margin-bottom: 20px; 
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .form-control {
+            width: 100%; 
+            height: 38px;
+        }
+        
+        .form-label {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header d-flex justify-content-between align-items-center">
+    <div class="brand d-flex align-items-center" style="padding-left: 100px;">
+        <div class="dropdown d-inline-block me-3">
+            <i class="bi bi-list text-white fs-4" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Tài khoản</a></li>
+                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+            </ul>
+        </div>
+        <strong style="padding-left: 50px; font-size: 27px;">Regal store</strong>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <input type="text" class="form-control search-bar d-inline-block" placeholder="Tìm kiếm..." style="width: 600px;">
+        <i class="bi bi-search ms-2 text-white"></i>
+    </div>
+
+    <div class="menu-right d-flex align-items-center" style="padding-right: 100px;">
+        <div>
+            <i class="bi bi-telephone-fill fs-4"></i>
+            <div>0123456789</div>
+        </div>
+        <div>
+            <i class="bi bi-cart fs-4"></i>
+            <div>Giỏ hàng</div>
+        </div>
+        <div>
+            <i class="bi bi-box-arrow-in-right fs-4"></i>
+            <div>Đăng nhập</div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-12 breadcrumb" style="padding-left: 60px;">
+            Trang chủ / Tài khoản
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 menu sidebar" style="margin-left: 50px; width: 250px;border-radius: 10px;">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu-account">
+                        <i class="bi bi-person-circle" style="font-size: 19px; vertical-align: middle;"></i>
+                        <span style="font-size: 13px; font-weight: bold;">Tài khoản của tôi</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" id="menu-profile">
+                        <i class="bi bi-card-heading"></i>Hồ sơ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" id="menu-password">
+                        <i class="bi bi-lock"></i>Đổi mật khẩu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu-orders">
+                        <i class="bi bi-box"></i>Đơn hàng
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="menu-voucher">
+                        <i class="bi bi-tag"></i>Voucher
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-9 content">
+            <h2 style="padding-top: 20px; padding-left: 50px;color :rgb(51, 63, 72)
+            display block;
+            font-family: 'Montserrat', sans-serif;
+            font-size :24px;
+            font-weight: 700;" >Đổi mật khẩu</h2>
+            <form style="padding-top: 25px; padding-right: 60px;">
+                <div class="form-section" style="padding-left: 100px;">
+                    
+                    <div class="form-label-group" style="padding-top: 20px; width: 70%;" >
+                        <label for="current-password" class="form-label">Mật khẩu cũ</label>
+                        <input type="password" class="form-control" id="current-password">
+                    </div>
+
+                    
+                    <div class="form-label-group" style="padding-top: 20px;width: 70%;">
+                        <label for="new-password" class="form-label">Mật khẩu mới</label>
+                        <input type="password" class="form-control" id="new-password">
+                    </div>
+
+                   
+                    <div class="form-label-group" style="padding-top: 20px; width: 70%;">
+                        <label for="confirm-password" class="form-label">Xác nhận mật khẩu mới</label>
+                        <input type="password" class="form-control" id="confirm-password">
+                    </div>
+                    <button type="submit" class="btn btn-danger" style="margin-top: 15px; margin-left: 300px;">Lưu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
