@@ -8,10 +8,10 @@
 							<li class="breadcrumb-item">
 								<a href="#">Regal Store</a>
 							</li>
-							<li class="breadcrumb-item active">Dashboard</li>
+							<li class="breadcrumb-item active">Trang chủ</li>
 						</ol>
 					</div>
-					<h4 class="page-title">Dashboard</h4>
+					<h4 class="page-title">Trang chủ</h4>
 				</div>
 			</div>
 		</div>
@@ -78,8 +78,8 @@
 											<i class="fas fa-database text-gradient-primary"></i>
 										</div>
 										<div class="col-10 text-right">
-											<h5 class="mt-0 mb-1">999.000 VND</h5>
-											<p class="mb-0 font-12 text-muted">Doanh Thu</p>
+											<h5 class="mt-0 mb-1">20.199.000 VND</h5>
+											<p class="mb-0 font-15 text-muted">Doanh Thu Tháng</p>
 										</div>
 									</div>
 								</div>
@@ -90,94 +90,37 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-4">
+			<div class="col-xl">
 				<div class="card">
 					<div class="card-body">
-						<h5 class="header-title pb-3 mt-0">Tài Khoản mới</h5>
+						<h5 class="header-title pb-3 mt-0">Thống kê doanh thu</h5>
 						<div class="table-responsive boxscroll" style="overflow: hidden; outline: none;">
-							<div class="media">
-								<img src="/assetss/img/avatar.jpg" class="thumb-md rounded-circle">
-								<div class="media-body ml-2">
-									<p class="mb-0">DucViet</p>
-									<span class="font-12 text-muted">KhachHang</span>
+							<div class="row my-2">
+								<div class="col">
+									<div class="card">
+										<div class="card-body">
+											<div class="d-flex justify-content-between align-items-center">
+												<div class="d-flex align-items-center">
+													<h5 style="color: blueviolet; margin-right: 10px;">Doanh thu theo
+														năm:</h5>
+													<select class="form-select custom-select"
+														style="width: auto; border-radius: 10px; padding: 5px 22px; background-color: #f0f8ff; border: 1px solid #ccc; color: #333;">
+														<option value="2020">2020</option>
+														<option value="2021">2021</option>
+														<option value="2022">2022</option>
+														<option value="2023">2023</option>
+														<option value="2024">2024</option>
+													</select>
+												</div>
+												<div style="width: 60%; argin-right: 10px;">
+													<canvas id="chBar"></canvas>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-6">
-				<div class="card">
-					<div class="card-body">
-						<h5 class="header-title mb-4 mt-0">Doanh Thu</h5>
-						<h4 class="mb-4">999.000 VND</h4>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-body">
-						<div class="d-sm-flex align-self-center">
-							<img src="/assetss/img/code.svg" alt="" class="" height="100">
-							<div class="media-body ml-3">
-								<h6>Tài khoản cần được xác nhận</h6>
-								<p class="text-muted font-13 ">Tài khoản của bạn chưa được xác minh ?
-									.</p>
-								<a href="#" class="btn btn-gradient-secondary">Confirm</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xl-4  col-lg-6">
-				<div class="card timeline-card">
-					<div class="card-body p-0">
-						<div class="bg-gradient2 text-white text-center py-3 mb-4">
-							<p class="mb-0 font-18">
-								<i class="mdi mdi-clock-outline font-20"></i> Hoạt động tuần này
-							</p>
-						</div>
-					</div>
-					<div class="card-body boxscroll">
-						<div class="timeline">
-							<div class="entry">
-								<div class="title">
-									<h6>9/ Oct</h6>
-								</div>
-								<div class="body">
-									<p>Đã thêm tài khoản abc ...
-										<a href="#" class="text-primary"> Read More</a>
-									</p>
-								</div>
-							</div>
-							<div class="entry">
-								<div class="title">
-									<h6>8/ Oct</h6>
-								</div>
-								<div class="body">
-									<p>Đã thêm khách hàng abc ...
-										<a href="#" class="text-primary"> Read More</a>
-									</p>
-								</div>
-							</div>
-							<div class="entry">
-								<div class="title">
-									<h6>7/ Oct</h6>
-								</div>
-								<div class="body">
-									<p class="pb-1">Đã thêm sản phẩm 1 ...
-										<a href="#" class="text-primary"> Read More</a>
-									</p>
-								</div>
-							</div>
-							<div class="entry">
-								<div class="title">
-									<h6>6/ Oct</h6>
-								</div>
-								<div class="body">
-									<p class="pb-1 mb-0">Đã thêm sản phẩm 2 ...
-										<a href="#" class="text-primary"> Read More</a>
-									</p>
-								</div>
-							</div>
+
 						</div>
 					</div>
 				</div>
@@ -185,3 +128,8 @@
 		</div>
 	</div>
 </div>
+<script src="/assetss/js/charts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/9d1d9a82d2.js" crossorigin="anonymous"></script>
